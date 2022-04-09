@@ -1,11 +1,8 @@
-from ctypes import util
-from os import access
 from fastapi import APIRouter, Depends, status, HTTPException, Response
 from fastapi.security.oauth2 import OAuth2PasswordRequestForm
-from pydantic import HttpUrl
 from sqlalchemy.orm import Session
+from .. import models, schemas, oauth2, database, utils
 
-from .. import database, schemas, models, utils, oauth2
 
 router = APIRouter(tags=['Authentication'])
 

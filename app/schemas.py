@@ -1,12 +1,8 @@
-#from locale import strcoll
-from os import access
-from tkinter import W
 from pydantic import BaseModel, EmailStr
-from pydantic.types import conint
 from datetime import datetime
-from app.database import Base
-from app.models import Post
 from typing import Optional
+
+from pydantic.types import conint
 
 
 class PostBase(BaseModel):

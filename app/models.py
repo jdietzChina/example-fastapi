@@ -1,10 +1,8 @@
-from datetime import timezone
-from operator import truediv
-from sqlite3 import Timestamp
+from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from sqlalchemy import Column, Integer, Boolean, String, ForeignKey
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
+
 from .database import Base
 
 #  Shows what our database table looks like

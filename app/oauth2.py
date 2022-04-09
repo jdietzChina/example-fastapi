@@ -1,4 +1,3 @@
-from os import access
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from . import schemas, database, models

@@ -1,5 +1,4 @@
 from pydantic import BaseSettings
-from app import database
 
 
 class Settings(BaseSettings):

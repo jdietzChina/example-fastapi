@@ -1,8 +1,7 @@
-from multiprocessing import synchronize
-from fastapi import Body, FastAPI, Response, status, HTTPException, Depends, APIRouter
-from .. import schemas, database, models, oauth2
+
+from fastapi import FastAPI, Response, status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
-from ..database import get_db
+from .. import schemas, database, models, oauth2
 
 router = APIRouter(
     prefix="/vote",
